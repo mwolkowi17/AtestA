@@ -8,6 +8,7 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
 import { CarsComponent } from './cars/cars.component';
 import { ListAComponent } from './list-a/list-a.component';
 import { TestlistComponent } from './testlist/testlist.component';
+import { FormComponent } from './form/form.component';
 
 
 
@@ -16,7 +17,8 @@ import { TestlistComponent } from './testlist/testlist.component';
     WelcomeComponent,
     CarsComponent,
     ListAComponent,
-    TestlistComponent
+    TestlistComponent,
+    FormComponent
     
   ],
   imports: [
