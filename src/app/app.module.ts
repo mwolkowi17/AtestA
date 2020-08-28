@@ -1,21 +1,27 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { CarsComponent } from './cars/cars.component';
 import { ListAComponent } from './list-a/list-a.component';
+import { TestlistComponent } from './testlist/testlist.component';
+
 
 
 @NgModule({
   declarations: [
     WelcomeComponent,
     CarsComponent,
-    ListAComponent
+    ListAComponent,
+    TestlistComponent
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule 
   ],
   providers: [],
   bootstrap: [WelcomeComponent]
