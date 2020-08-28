@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class ListAComponent implements OnInit {
 
   cars:Cars[];
-  checker:boolean
+  checker:boolean;
+  text: string = "Witajcie z komponentu!"
 
   constructor() {
     this.cars=["merc","fiat","opel"];

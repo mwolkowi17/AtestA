@@ -1,16 +1,22 @@
 <p>testlist works!</p>
-
-<table >
+<div class="container">
+<table class="table table-hover">
     <thead>
+        <h5>Goście</h5>
         <tr>
-            <th>Goście</th>
-            
+            <th>Id</th>
+            <th>Imie</th>
+            <th>Nazwisko</th>
+            <th>klient od</th>
         </tr>
     </thead>
     <tbody>
         <tr *ngFor="let guest of guests">
+            <td>{{guest.guestID}}</td>
             <td>{{guest.name}}</td>
-            
+            <td>{{guest.surname}}</td>
+            <td>{{guest.member_since}}</td>
         </tr>
     </tbody>
 </table>
+</div>
