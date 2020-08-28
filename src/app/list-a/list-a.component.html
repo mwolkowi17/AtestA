@@ -1,0 +1,15 @@
+<p>list-a works!</p>
+<table *ngIf="checker">
+    <thead>
+        <tr>
+            <th>Samochody</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let car of cars;">
+            <td>{{car}}</td>
+            
+        </tr>
+    </tbody>
+</table>
