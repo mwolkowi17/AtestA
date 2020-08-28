@@ -19,7 +19,14 @@ export class ListAComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  changeValue(){
+    if(this.checker==true){
+      this.checker=false;
+    }
+    else{
+      this.checker=true;
+    }
+  }
 }
 class Cars{
   
