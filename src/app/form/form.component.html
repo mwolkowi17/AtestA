@@ -1,4 +1,5 @@
 <p>form works!</p>
+
 <div class="row">
     <div class="col-xs-12 col-lg-12">
         <form (ngSubmit)="onSubmit(f)" #f="ngForm">
@@ -34,4 +35,21 @@
             </div>
         </form>
     </div>
+</div>
+<div class="row">
+    <table class="table table-hover">
+        <thead>
+            <h5>Samochody</h5>
+            <tr>
+                <th>Marka</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let car of car_list">
+                <td>{{car}}</td>
+               
+            </tr>
+        </tbody>
+    </table>
 </div>

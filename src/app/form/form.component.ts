@@ -8,9 +8,11 @@ import { NgForm } from '@angular/forms';
 })
 export class FormComponent implements OnInit {
   title: string;
+  car_list:CarList[];
 
   constructor() {
     this.title = "Wygląda na to, że wszystko działa jak należy!"
+    this.car_list=["ford"]
   }
 
   @ViewChild('f', { static: false }) carForm: NgForm;
@@ -20,6 +22,8 @@ export class FormComponent implements OnInit {
     console.log("Marka samochodu: " + form.value.carBrand);
     console.log("Opis samochodu: " + form.value.carDescription);
     console.log("Wielkość zamówienia: " + form.value.carAmount);
+    this.car_list.push(form.value.carBrand);
+    console.log(this.car_list[1]);
   }
   
   onClear() {
@@ -28,5 +32,8 @@ export class FormComponent implements OnInit {
   ngOnInit(): void {
 
   }
+
+}
+class CarList{
 
 }
